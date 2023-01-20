@@ -1,3 +1,15 @@
-<h1>
-<%= title %> 
-</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <heading>add new messages</heading>
+    <form method="POST" action="/new">
+        <input name="messageText" placeholder="message" type="text"></input>
+        <input name="authorText" placeholder="author" type="text"></input>
+        <button type="submit">submit</button>
+     </form>
+  </body>
+</html>
